@@ -9,7 +9,7 @@ def normal_pdf(x, mean, std_dev):
 	"""
 	# Your code here
 	val = 0
-	scal = 1 / math.sqrt(math.pi * 2 * (std_dev**2))
+	scal = 1 / math.sqrt(math.pi * 2 * std_dev**2)
 	pot = math.exp(-(x - mean)**2 / (2*std_dev**2))
 	val = scal * pot
 
